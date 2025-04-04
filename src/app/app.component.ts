@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import html2pdf from 'html2pdf.js';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'CV-generator';
+
+  saveCV(): void {
+    html2pdf().from(document.getElementById('canvas') as HTMLElement).save()
+  }
 }

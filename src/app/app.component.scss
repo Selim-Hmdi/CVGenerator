@@ -1,0 +1,31 @@
+main {
+  display: flex;
+  height: 90vh;
+  margin-top: 48px;
+}
+
+.box {
+  border: 1px solid black;
+}
+
+#editor-container {
+  margin: 0 auto;
+  border-right: 1px black solid;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+
+  .box {
+    width: 50%;
+  }
+}
+
+#sidebar {
+  flex-grow: 1;
+}
+
+footer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
